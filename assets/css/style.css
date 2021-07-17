@@ -939,6 +939,151 @@ section {
 }
 
 /*--------------------------------------------------------------
+# Youtube Section
+--------------------------------------------------------------*/
+#youtube {
+  width: 100%;
+  height: 75vh;
+  background: url("../img/counts-img.jpg") top left;
+  background-size: cover;
+  position: relative;
+}
+
+#youtube:before {
+  content: "";
+  background: rgba(255, 255, 255, 0.6);
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+#youtube .container {
+  position: relative;
+}
+
+#youtube h1 {
+  margin: 0;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 56px;
+  color: #222222;
+  font-family: "Poppins", sans-serif;
+}
+
+#youtube h1 span {
+  color: #ffbb38;
+  text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
+}
+
+#youtube h2 {
+  color: #555555;
+  margin: 5px 0 30px 0;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+#youtube .btn-get-started {
+  color: #000000;
+  border-radius: 4px;
+  padding: 7px 25px 8px 25px;
+  white-space: nowrap;
+  transition: 0.3s;
+  font-size: 16px;
+  display: inline-block;
+  border: 2px solid #ffc451;
+}
+.pricing .btn-buy {
+  color: #000000;
+  border-radius: 4px;
+  padding: 7px 25px 8px 25px;
+  white-space: nowrap;
+  transition: 0.3s;
+  font-size: 16px;
+  display: inline-block;
+  border: 2px solid #ffc451;
+}
+.pricing .btn-buy:hover {
+  background: #ffbb38;
+  color: #343a40;
+  font-size: 18px;
+  border: 2px solid #000000;
+}
+
+#youtube .btn-get-started:hover {
+  background: #ffbb38;
+  color: #343a40;
+  font-size: 18px;
+  border: 2px solid #000000;
+}
+
+#youtube .btn-watch-video {
+  font-size: 16px;
+  transition: 0.5s;
+  margin-left: 25px;
+  color: #222222;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+}
+
+#youtube .btn-watch-video i {
+  color: #ffbb38;
+  font-size: 32px;
+  transition: 0.3s;
+  line-height: 0;
+  margin-right: 8px;
+}
+
+#youtube .btn-watch-video:hover {
+  color: #ffbb38;
+  text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
+}
+
+#youtube .btn-watch-video:hover i {
+  color: #ffbb38;
+  text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
+}
+
+@media (min-width: 1024px) {
+  #youtube {
+    background-attachment: fixed;
+  }
+}
+
+@media (max-width: 768px) {
+  #youtube {
+    height: 100vh;
+  }
+  #youtube h1 {
+    font-size: 28px;
+    line-height: 36px;
+  }
+  #youtube h2 {
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 30px;
+  }
+  #youtube .btn-get-started,
+  #youtube .btn-watch-video {
+    font-size: 16px;
+  }
+}
+
+@media (max-height: 500px) {
+  #youtube {
+    height: 120vh;
+  }
+}
+/*--------------------------------------------------------------
+# Vids
+--------------------------------------------------------------*/
+.vids {
+  font-size: larger;
+}
+
+/*--------------------------------------------------------------
 # Counts
 --------------------------------------------------------------*/
 .counts .content {
@@ -949,6 +1094,7 @@ section {
   font-weight: 700;
   font-size: 34px;
   color: #ffc451;
+  text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
 }
 
 .counts .content p {
@@ -964,6 +1110,7 @@ section {
   display: block;
   font-size: 36px;
   color: #ffc451;
+  text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
   float: left;
 }
 
@@ -996,12 +1143,6 @@ section {
 
 .counts .content .count-box a:hover {
   color: #626262;
-}
-
-.counts .image {
-  background: url("../img/counts-img.jpg") center center no-repeat;
-  background-size: cover;
-  min-height: 400px;
 }
 
 @media (max-width: 991px) {
@@ -1060,7 +1201,8 @@ section {
   font-size: 20px;
   font-weight: bold;
   margin: 10px 0 5px 0;
-  color: #fff;
+  color: #ffc451;
+  text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.4);
 }
 
 .testimonials .testimonial-item h4 {
